@@ -1,0 +1,30 @@
+.carddetails-shimmer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.carddetails-shimmer .img{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(189, 189, 189);
+}
+.carddetails-shimmer .content{
+    width: 600px;
+    height: 250px;
+    background-color: rgb(194, 194, 194);
+    
+}
+
+.country-details.dark .carddetails-shimmer .img{
+    background-color: rgb(65, 92, 107);
+}
+.country-details.dark .carddetails-shimmer .content{
+    background-color: rgb(65, 92, 107);
+}
+@media (max-width:1200px){
+    .carddetails-shimmer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

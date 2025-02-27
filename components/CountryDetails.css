@@ -1,0 +1,94 @@
+.country-details {
+    padding: 3rem;
+    min-height: calc(100vh - 50px);
+}
+
+.country-details button {
+    border: none;
+    padding: .7rem 1.5rem;
+    box-shadow: 0 0 4px .5px rgb(129, 129, 129);
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.country-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.country-container img {
+    width: 500px;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 4px .5px rgb(129, 129, 129);
+}
+
+.country {
+    display: flex;
+    flex-direction: column;
+}
+
+.country h2 {
+    margin-bottom: 1rem;
+}
+
+.country-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+.country-content p {
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+    margin-block: .8rem;
+    padding-right: 1rem;
+}
+
+.country .border-countries {
+    max-width: 500px;
+    /* max-width: 100%; */
+    display: flex;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.border-countries span {
+}
+
+.border-countries-name {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.country .border-countries .border-countries-name a {
+    text-decoration-line: none;
+    color: black;
+    margin-inline: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: .6rem 1rem;
+    margin-bottom: .7rem;
+    font-size: .9rem;
+}
+
+.country-details.dark,
+.country-details.dark * {
+    background-color: rgb(24, 41, 51);
+    color: white;
+}
+
+.country-details.dark .border-countries-name a {
+    color: white;
+}
+
+@media (max-width:800px){
+    .country-content{
+        height: 100%;
+    }
+}

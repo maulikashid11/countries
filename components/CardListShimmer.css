@@ -1,0 +1,32 @@
+div.shimmer-card{
+    width: 225px;
+    height: 300px;
+    height: 300px;
+    box-shadow: 0 0 4px .5px rgb(129, 129, 129);
+    border-radius: 5px;
+    background-color: rgb(160, 160, 160);
+    position: relative;
+
+}
+.shimmer-card::before{
+    position: absolute;
+    bottom: 80px;
+    content: '';
+    width: 50%;
+    height: 10px;
+    background-color: rgb(192, 192, 192);
+    margin-left: 10px;
+}
+.shimmer-card::after{
+    position: absolute;
+    bottom: 50px;
+    content: '';
+    width: 60%;
+    height: 10px;
+    background-color: rgb(196, 196, 196);
+    margin-left: 10px;
+}
+
+main.dark div.shimmer-card{
+    background-color: rgb(41, 70, 87);
+}
