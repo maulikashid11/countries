@@ -15,7 +15,7 @@ export default function CardList({ search, selectMenu }) {
         <div className="card-container">
             {
                 countriesData.length === 0 ? <CardListShimmer /> :
-                    countriesData.filter((country) => country.name.common.toLowerCase().includes(search) && country.region.includes(selectMenu)).map((country) => {
+                    countriesData.filter((country) => country.name.common.toLowerCase().includes(search.toLowerCase()) && country.region.includes(selectMenu)).map((country) => {
                         return <Card key={country.name.common} country={country} />
                     })
             }
